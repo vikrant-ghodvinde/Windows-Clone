@@ -1,0 +1,132 @@
+ul{
+  list-style: none;
+  color: #fff;
+}
+.search-menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  z-index: 1;
+}
+.search-menu.active{
+  visibility: visible;
+}
+.search-menu.active2{
+  visibility: hidden;
+}
+
+.search-menu .searchBx{
+  content: '';
+  width: 600px;
+  height: 650px;
+  background: #0f0e0e;
+  position: absolute;
+  bottom: 60px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+/* header */
+.search-menu .searchBx .header{
+  width: 100%;
+  height: 50px;
+  background: #050505;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.searchBx .header ul{
+  display: flex;
+  align-items: center;
+}
+.searchBx .header ul li{
+  margin: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #999;
+  display: block;
+}
+.searchBx .header .sm-icon{
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.searchBx .header .sm-icon i{
+  margin: 10px;
+  color: #999;
+}
+
+/* content */
+.search-content{
+  padding: 25px;
+}
+.search-content .top-apps{
+  display: flex;
+  justify-content: space-between;
+}
+.search-content .top-apps .appBx{
+  content: '';
+  width: 105px;
+  height: 80px;
+  margin: 15px 0;
+  background: #1c1a1a;
+  border-radius: 3px;
+  padding: 8px;
+  text-align: center;
+}
+.search-content .top-apps .appBx img{
+  position: relative;
+  width: 30%;
+}
+.search-content .top-apps .appBx p{
+  font-size: 11px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.8px;
+}
+
+/* recent activities */
+.recent-activity .mainBox-recent{
+  display: flex;
+
+}
+.recent-activity .recent-content{
+  width: 100%;
+  padding: 20px 10px;
+}
+.recent-activity .recent-content span{
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+.recent-content .recentBx{
+  padding: 10px 0;
+}
+.recent-content .recentBx .application-opened{
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+.recent-content .recentBx .application-opened img{
+  width: 30px;
+  margin: 0 15px;
+}
+.recent-content .recentBx .application-opened i{
+  width: 30px;
+  margin: 0 15px;
+  font-size: 31px;
+  color: #fff;
+}
+.recent-content .recentBx .application-opened p{
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+
+/* footer */
+.searchBx .footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}

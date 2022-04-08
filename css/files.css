@@ -1,0 +1,367 @@
+.file-explorer{
+  content: '';
+  width: 100%;
+  height: auto;;
+  position: absolute;
+  top: 0;
+  bottom: 40px;
+  background: #050505;
+  visibility: hidden;
+}
+.file-explorer.active{
+  visibility: visible;
+}
+.file-explorer .fileHead{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  background: #050505;
+}
+.file-explorer .fileHead .left-icon{
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.file-explorer .fileHead .left-icon img{
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+}
+.file-explorer .fileHead .left-icon span{
+  content: '';
+  width: 1.5px;
+  height: 20px;
+  background: #fff;
+  margin: 0 5px;
+}
+.file-explorer .fileHead i{
+  margin: 0 5px;
+}
+.file-explorer .fileHead p{
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  padding: 0 5px;
+}
+
+.file-explorer .fileHead .right-icon img{
+  width: 40px;
+  height: 40px;
+  padding: 10px 10px;
+}
+
+
+.file-explorer .fileMenu{
+  display: flex;
+  justify-content: space-between;
+  background: #050505;
+}
+.file-explorer .fileMenu .menu-left{
+  display: flex;
+  color: #fff;
+}
+.file-explorer .fileMenu .menu-left p{
+  padding: 5px 30px;
+  font-size: 14px;
+}
+.file-explorer .fileMenu .menu-left p.on{
+  background: #00f;
+  border: 1px solid #00f;
+}
+.file-explorer .fileMenu .menu-left p.selected{
+  background: rgba(255, 255, 255, 0.2);
+  border-top: 1px solid #777;
+  border-right: 1px solid #777;
+}
+.file-explorer .fileMenu .menu-right{
+  display: flex;
+  color: #fff;
+  align-items: center;
+}
+.file-explorer .fileMenu .menu-right i{
+  margin: 0 10px;
+  color: #666;
+}
+.file-explorer .fileMenu .menu-right i.fa-question-circle{
+  color: #00f;
+}
+
+.file-explorer .fileTools{
+  padding: 5px 10px;
+  background: #333;
+  border-top: 1px solid #777;
+  display: flex;
+}
+.file-explorer .fileTools .div1{
+  text-align: center;
+  border-right: 1px solid #777;
+}
+.file-explorer .fileTools .div1 b{
+  color: #999;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  position: relative;
+}
+.file-explorer .fileTools .div1 .div1-content{
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.file-explorer .fileTools .div1 .div1-content .BoxBx{
+  width: 95px;
+  height: 60px;
+  text-align: center;
+  color: #666;
+  margin: 0;
+}
+.file-explorer .fileTools .div1 .div1-content .BoxBx i{
+  font-size: 36px;
+}
+.file-explorer .fileTools .div1 .div1-content .BoxBx p{
+  font-weight: 500;
+}
+.file-explorer .fileTools .div1 .div1-content .sm-tools .sm-toolBx{
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+  color: #666;
+}
+.file-explorer .fileTools .div1 .div1-content .sm-tools .sm-toolBx i{
+  font-size: 16px;
+    padding: 0 8px;
+}
+.file-explorer .fileTools .div1 .div1-content .sm-tools .sm-toolBx p{
+  font-size: 14px;
+  font-weight: 500;
+}
+.file-explorer .fileTools .div1 .div1-content .sub-div{
+  display: flex;
+  padding: 5px;
+}
+.file-explorer .fileTools .div1 .div1-content .sub-div .BoxBx p i{
+  font-size: 16px;
+}
+.file-explorer .fileTools .div1 .div1-content span{
+  width: 1px;
+  height: 90px;
+  background: #777;
+  margin: 8px 0;
+}
+.file-explorer .fileTools .div1 .div1-content .sm-tools .sm-toolBx .select-all{
+  color: rgba(0, 100, 255, 0.5);
+}
+.file-explorer .fileTools .div1 .div1-content .sm-tools .sm-toolBx .select-invert{
+  color: rgba(255, 10, 0, 0.5);
+}
+
+.file-explorer .fileSearch{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+}
+.file-explorer .fileSearch .div-left{
+  display: flex;
+  color: #777;
+  justify-content: space-between;
+}
+.file-explorer .fileSearch .div-left i{
+  margin: 0 20px;
+  margin-left: 0;
+}
+.file-explorer .fileSearch .div-middle{
+  width: 70%;
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.file-explorer .fileSearch .div-middle select{
+  width: 100%;
+  height: 35px;
+  background: none;
+  border: 2px solid #777;
+  outline: none;
+  color: #777;
+  font-size: 16px;
+}
+.file-explorer .fileSearch .div-middle .reload-box{
+  content: '';
+  width: 35px;
+  height: 35px;
+  border: 2px solid #777;
+  border-left: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 14px;
+}
+.file-explorer .fileSearch .div-right{
+  width: 25%;
+}
+.file-explorer .fileSearch .div-right input{
+  width: 100%;
+  height: 35px;
+  background: none;
+  border: 2px solid #666;
+  outline: none;
+  font-size: 16px;
+  letter-spacing: normal;
+}
+
+/* li style */
+li{
+  list-style: none;
+}
+
+.file-explorer .fileContent{
+  display: flex;
+  color: #777;
+  padding: 30px 5px;
+}
+.file-explorer .fileContent li{
+  padding: 8px 5px;
+}
+.file-explorer .fileContent li .fa-cloud{
+  color: #2196f3;
+}
+.file-explorer .fileContent li .fa-tv{
+  color: #2196f3;
+}
+
+.file-explorer .fileContent li .fa-network-wired{
+  color: #2196f3;
+}
+
+.file-explorer .fileContent li .fa-star{
+  color: #ffbb00;
+}
+.file-explorer .fileContent .left-file-content{
+  border-right: 1px solid #777;
+  width: 15%;
+  /* padding-right: 40px; */
+}
+.file-explorer .fileContent .left-file-content .title-quick{
+  padding: 8px 25px;
+  margin: 8px 0;
+  background: #333;
+}
+.file-explorer .fileContent .left-file-content .quick-list{
+  padding-left: 40px;
+}
+.fileContent .left-file-content .quick-list li{
+  padding: 5px 0;
+}
+.fileContent .left-file-content .quick-list li i{
+  margin: 0 5px;
+}
+.fileContent .left-file-content .quick-list li .fa-folder{
+  color: #2196f3;
+}
+.fileContent .left-file-content .quick-list li .fa-download{
+  color: #05a13e;
+}
+.fileContent .left-file-content .quick-list li .fa-file-alt{
+  color: #999;
+}
+.fileContent .left-file-content .quick-list li .fa-image{
+  color: #0026ff;
+}
+.fileContent .left-file-content .quick-list li .fa-music{
+  color: #ff5500;
+}
+.fileContent .left-file-content .quick-list li .fa-film{
+  color: #ff00a2;
+}
+.file-explorer .fileContent .left-file-content .thisPc-list{
+  padding-left: 20px;
+}
+.file-explorer .fileContent .left-file-content .thisPc-list li .fa-hdd{
+  color: #999;
+}
+
+
+.file-explorer .right-file-content{
+  width: 100%;
+  padding: 0 10px;
+}
+.file-explorer .right-file-content .its-tilte{
+  display: flex;
+  align-items: center;
+}
+.file-explorer .right-file-content .its-tilte h3{
+  font-size: 18px;
+  font-weight: 400;
+  width: 200px;
+  color: rgba(98, 0, 255, 0.8)
+}
+.file-explorer .right-file-content .its-tilte span{
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: rgba(119, 119, 119, 0.1);
+}
+.file-explorer .right-file-content .frequent-icons{
+  margin: 30px 40px;
+  padding-right: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.file-explorer .right-file-content .frequent-icons .iconBox{
+  display: flex;
+}
+.file-explorer .right-file-content .frequent-icons .iconBox i{
+  font-size: 60px;
+  margin-right: 10px;
+}
+.file-explorer .right-file-content .frequent-icons .iconBox .fa-thumbtack{
+  font-size: 14px;
+  color: #333;
+}
+.file-explorer .right-file-content .frequent-icons .iconBox .icon-text h4{
+  font-weight: 500;
+}
+.file-explorer .right-file-content .frequent-icons .iconBox .icon-text p{
+  color: #333;
+}
+
+/* coloring */
+.file-explorer .right-file-content .frequent-icons .iconBox .fa-folder{
+  color: #2196f3;
+}
+.file-explorer .right-file-content .frequent-icons .iconBox .fa-file-download{
+  color: #05a13e;
+}
+.file-explorer .right-file-content .frequent-icons .iconBox .fa-file-alt{
+  color: #999;
+}
+.file-explorer .right-file-content .frequent-icons .iconBox .fa-image{
+  color: #0026ff;
+}
+.file-explorer .right-file-content .frequent-icons .iconBox .fa-music{
+  color: #ff5500;
+}
+.file-explorer .right-file-content .frequent-icons .iconBox .fa-film{
+  color: #ff00a2;
+}
+.file-explorer .right-file-content .its-tilte h3.exception{
+  width: 160px;
+}
+
+.part .lastBox{
+  padding-right: 100px;
+  padding-top: 20px;
+}
+.part .lastBox .lastLineBx{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+.part .lastBox .lastLineBx .smImg{
+  display: flex;
+  align-items: center;
+}
+.part .lastBox .lastLineBx .smImg img{
+  width: 40px;
+  height: 30px;
+  margin-right: 15px;
+}

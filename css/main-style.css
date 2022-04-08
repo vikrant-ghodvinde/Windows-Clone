@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  cursor: default;
+}
+body{
+  background: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+span{
+  color: #fff;
+}
+.taskbar{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  height: 40px;
+  background: rgba(55, 55, 55,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+}
+.taskbar .icons{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.taskbar .icons img{
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  padding: 5px;
+}
+.taskbar .date-time .setting{
+  display: flex;
+  position: absolute;
+  right: 180px;
+  top: 7px;
+
+}
+.taskbar .date-time .setting img{
+  width: 30px;
+  height: 30px;
+  margin: 0 1px;
+  padding: 5px;
+  display: block;
+}
+.taskbar .date-time .lang{
+  display: flex;
+  position: absolute;
+  right: 130px;
+  top: 4px;
+  padding: 5px 8px;
+}
+.taskbar .date-time .lang span{
+  font-weight: 300;
+  color: #fff;
+}
+
+.taskbar .date-time .time{
+  display: flex;
+  position: absolute;
+  right: 60px;
+  top: 4px;
+  padding: 5px 8px;
+}
+.taskbar .date-time .time span{
+  font-weight: 300;
+  color: #fff;
+}
+
+.taskbar .date-time .notifications{
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 7px;
+}
+.taskbar .date-time .notifications img{
+  width: 30px;
+  height: 30px;
+  margin: 0 1px;
+  padding: 5px;
+  display: block;
+}
+
+.winBtn.active{
+  background: rgba(255, 255, 255, 0.2);
+}
+.searchbtn.active{
+  background: rgba(255, 255, 255, 0.2);
+}

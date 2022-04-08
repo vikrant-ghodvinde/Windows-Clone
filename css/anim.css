@@ -1,0 +1,90 @@
+.taskbar .icons img:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+.taskbar .date-time .setting img:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+.taskbar .date-time .lang:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+.taskbar .date-time .time:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+.taskbar .date-time .notifications img:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+.startBx .user .shut-down img:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* desktop */
+.desktop .desktop-icons:hover img{
+  background: rgba(255, 255, 255, 0.02);
+}
+.desktop .desktop-icons:hover p{
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* icons */
+.start-menu-icons .title a:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+.apps .icon-content:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+.recommended .recommendedBX:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* search box anim */
+.searchBx .header ul li:hover{
+  color: #fff;
+}
+.searchBx .header .sm-icon i:hover{
+  color: #fff;
+}
+.search-content .top-apps .appBx:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+.recent-content .recentBx .application-opened:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* file explorer */
+.file-explorer .fileHead .right-icon img:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+.file-explorer .fileHead .right-icon img.exitBtn:hover{
+  background: #f00;
+}
+.file-explorer .fileMenu .menu-left p:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+.file-explorer .fileMenu .menu-left p.on:hover{
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #777;
+}
+
+.file-explorer .fileTools .div1 .BoxBx:hover p{
+  color: #999;
+}
+.file-explorer .fileTools .div1 .BoxBx:hover i{
+  color: #999;
+}
+.file-explorer .fileTools .div1 .sm-tools .sm-toolBx:hover p{
+  color: #999;
+}
+.file-explorer .fileTools .div1 .sm-tools .sm-toolBx:hover i{
+  color: #999;
+}
+.file-explorer .fileSearch .div-middle .reload-box:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* content */
+.file-explorer .fileContent li:hover{
+  background: rgba(0, 100, 255, 0.02);
+}

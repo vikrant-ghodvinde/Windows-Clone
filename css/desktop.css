@@ -1,0 +1,16 @@
+.desktop{
+  padding: 30px;
+}
+.desktop .desktop-icons{
+  display: grid;
+  align-items: center;
+}
+.desktop .desktop-icons img{
+  width: 70px;
+  height: 70px;
+}
+.desktop .desktop-icons p{
+  color: #fff;
+  font-size: 14px;
+  width: 70px;
+}
